@@ -1,0 +1,32 @@
+// === COLORS ===
+$color-primary: #e54500;
+$color-primary-light: #f74b00;
+$color-primary-dark: #cd3e00;
+
+$color-secondary: #b3892e;
+$color-secondary-light: #d5a744;
+$color-secondary-dark: #a48032;
+
+$color-tertiary: #fc9109;
+$color-tertiary-light: #ffb14d;
+$color-tertiary-dark: #f5800a;
+
+$color-grey: #a0a0a0;
+$color-grey-light-1: #c6c6c6;
+$color-grey-light-2: #e6dede;
+$color-grey-light-3: #f1f1f1;
+$color-grey-dark-1: #8b8b8b;
+$color-grey-dark-2: #757575;
+$color-grey-dark-3: #616161;
+
+$color-black: #292929;
+$color-black-light: #383838;
+
+// === FONTS ===
+@include googlefonts("Open+Sans"); // font-family: 'Open Sans', sans-serif;
+@include googlefonts("Roboto"); // font-family: 'Roboto', sans-serif;
+@include googlefonts("Lato"); //font-family: 'Lato', sans-serif;
+
+$font-primary: "Roboto";
+$font-secondary: "Open Sans";
+$font-text: "Lato";
