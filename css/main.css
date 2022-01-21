@@ -125,6 +125,45 @@ strong {
   border: none;
 }
 
+.about {
+  height: 40rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  background-color: black;
+}
+
+.about__main {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 2rem;
+  text-align: center;
+}
+
+.about__main-heading {
+  font-size: 4.2rem;
+  margin-bottom: 2rem;
+  color: #FFF;
+}
+
+.about__main-text {
+  font-size: 2rem;
+  color: #FFF;
+}
+
+.about__picture {
+  grid-column: 2/-1;
+  background-image: url(../../img/live/live-1-desk.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
 .container {
   display: -ms-grid;
   display: grid;
