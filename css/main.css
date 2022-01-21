@@ -17,6 +17,7 @@ html {
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-color: black;
 }
 
 strong {
@@ -125,6 +126,20 @@ strong {
   border: none;
 }
 
+.section__about {
+  border-bottom: 1px solid #f1f1f1;
+  border-top: 1px solid #f1f1f1;
+}
+
+.section__staff {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  margin-top: 8rem;
+  background-color: #FFF;
+}
+
 .about {
   height: 40rem;
   display: -ms-grid;
@@ -167,9 +182,13 @@ strong {
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: minmax(auto-fill, 1fr) min-content 80vh 80vh;
-      grid-template-rows: minmax(auto-fill, 1fr) -webkit-min-content 80vh 80vh;
-      grid-template-rows: minmax(auto-fill, 1fr) min-content 80vh 80vh;
+  -ms-grid-rows: minmax(auto-fill, 1fr) max-content 80vh;
+      grid-template-rows: minmax(auto-fill, 1fr) -webkit-max-content 80vh;
+      grid-template-rows: minmax(auto-fill, 1fr) max-content 80vh;
+}
+
+.content {
+  background-color: #FFF;
 }
 
 .nav {
@@ -210,5 +229,65 @@ strong {
   color: #c6c6c6;
   -webkit-transform: scale(1.2) rotate(-2deg);
           transform: scale(1.2) rotate(-2deg);
+}
+
+.staff {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-right: 1px solid #c6c6c6;
+}
+
+.staff__heading {
+  font-size: 3.2rem;
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  margin: 1rem;
+}
+
+.staff__text {
+  margin: 2rem;
+  font-size: 2rem;
+}
+
+.team {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.team__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: min-content max-content;
+      grid-template-columns: -webkit-min-content -webkit-max-content;
+      grid-template-columns: min-content max-content;
+  gap: 2rem;
+}
+
+.team__img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.15);
+}
+
+.team__details {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 2rem;
+}
+
+.team__name {
+  font-size: 2.2rem;
+}
+
+.team__text {
+  font-size: 1.4rem;
+  color: #c6c6c6;
 }
 /*# sourceMappingURL=main.css.map */

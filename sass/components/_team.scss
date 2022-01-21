@@ -1,0 +1,34 @@
+.team {
+  justify-self: center;
+  align-self: center;
+  
+
+  &__list {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    gap: 2rem;
+  }
+
+  &__img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.15); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.15);
+  }
+
+  &__details {
+    align-self: center;
+    margin-left: 2rem;
+  }
+
+  &__name {
+    font-size: 2.2rem;
+ 
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    color: $color-grey-light-1;
+  }
+}
