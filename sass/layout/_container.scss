@@ -1,0 +1,5 @@
+
+.container{
+  display: grid;
+  grid-template-rows:  minmax(auto-fill, 1fr) min-content 80vh 80vh; 
+}

@@ -19,6 +19,50 @@ body {
           box-sizing: border-box;
 }
 
+strong {
+  font-weight: normal;
+}
+
+.header {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  position: relative;
+}
+
+.header__bg {
+  background-image: url(../../img/bg/bg-1-desk.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 60rem;
+}
+
+.header__heading {
+  position: absolute;
+  top: 20%;
+  left: 60%;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.header__heading-main {
+  display: block;
+  font-family: "Open Sans";
+  font-size: 4.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.header__heading-sub {
+  position: absolute;
+  top: 100%;
+  left: 80%;
+}
+
+.navbar {
+  display: none;
+}
+
 .navbar__heading {
   font-family: "Roboto";
   font-weight: 400;
@@ -26,7 +70,7 @@ body {
 }
 
 .navbar__back {
-  background-color: rgba(41, 41, 41, 0.3);
+  background-color: rgba(19, 19, 19, 0.9);
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
 }
@@ -79,5 +123,53 @@ body {
   top: 27%;
   left: 85%;
   border: none;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: minmax(auto-fill, 1fr) min-content 80vh 80vh;
+      grid-template-rows: minmax(auto-fill, 1fr) -webkit-min-content 80vh 80vh;
+      grid-template-rows: minmax(auto-fill, 1fr) min-content 80vh 80vh;
+}
+
+.nav {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  height: 10rem;
+  background-color: #131313;
+}
+
+.nav__list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-family: "Open Sans";
+  color: #fff;
+  display: block;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.nav__link:hover, .nav__link:active {
+  color: #c6c6c6;
+  -webkit-transform: scale(1.2) rotate(-2deg);
+          transform: scale(1.2) rotate(-2deg);
 }
 /*# sourceMappingURL=main.css.map */
