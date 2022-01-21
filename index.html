@@ -20,7 +20,69 @@
   </head>
   <body class="container">
     <header class="header">
-      
+      <!-- Navbar mob start -->
+      <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-brand d-flex align-items-center">
+            <img src="img/logo-mini.png" alt="logo" />
+            <h1 class="navbar__heading ms-3 text-uppercase fs-4">
+              Coté Musique
+            </h1>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas navbar__back offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5
+                class="offcanvas-title navbar__back-title"
+                id="offcanvasNavbarLabel"
+              >
+                Menu
+              </h5>
+              <div class="navbar__back-line">&nbsp;</div>
+              <button
+                type="button"
+                class="navbar__back-btn btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul
+                class="navbar-nav navbar__back-list justify-content-end flex-grow-1 pe-3"
+              >
+                <li class="nav-item navbar__back-items">
+                  <a
+                    class="nav-link active navbar__back-link"
+                    aria-current="page"
+                    href="#"
+                    >Acceuil</a
+                  >
+                </li>
+                <li class="nav-item navbar__back-items">
+                  <a class="nav-link navbar__back-link" href="#">Evènements</a>
+                </li>
+                <li class="nav-item navbar__back-items">
+                  <a class="nav-link navbar__back-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar mob end -->
     </header>
 
     <script
