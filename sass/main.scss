@@ -3,6 +3,7 @@
 
 @import "abstracts/mixins";
 @import "abstracts/variables";
+@import "abstracts/animation";
 
 @import "base/base";
 @import "base/utilities";
@@ -16,3 +17,4 @@
 
 @import "components/staff";
 @import "components/team";
+@import "components/card";

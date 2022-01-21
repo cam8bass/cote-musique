@@ -1,6 +1,57 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+@-webkit-keyframes transpale {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes transpale {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(80px);
+            transform: translateX(80px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(80px);
+            transform: translateX(80px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
 *,
 *::after,
 *::before {
@@ -52,12 +103,16 @@ strong {
   font-family: "Open Sans";
   font-size: 4.5rem;
   margin-bottom: 1.5rem;
+  -webkit-animation: transpale 3s;
+          animation: transpale 3s;
 }
 
 .header__heading-sub {
   position: absolute;
   top: 100%;
   left: 80%;
+  -webkit-animation: opacity 3s;
+          animation: opacity 3s;
 }
 
 .navbar {
@@ -137,7 +192,15 @@ strong {
       grid-template-columns: repeat(2, 1fr);
   border-top: 1px solid #f1f1f1;
   height: 60vh;
-  background-color: #1e143e;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(#0a031d));
+  background-image: linear-gradient(to bottom, black, #0a031d);
+}
+
+.section__work {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(auto-fit, 1fr))[3];
+      grid-template-columns: repeat(3, minmax(auto-fit, 1fr));
 }
 
 .about {
@@ -245,17 +308,18 @@ strong {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  color: #fff;
+  margin: 2rem;
 }
 
 .staff__heading {
   font-size: 3.2rem;
   font-family: "Open Sans";
   text-transform: uppercase;
-  margin: 1rem;
+  margin-bottom: 1.2rem;
 }
 
 .staff__text {
-  margin: 2rem;
   font-size: 2rem;
   text-align: center;
   width: 80%;
@@ -295,10 +359,19 @@ strong {
 
 .team__name {
   font-size: 2.2rem;
+  color: #FFF;
 }
 
 .team__text {
   font-size: 1.4rem;
   color: #c6c6c6;
+}
+
+.card {
+  width: 33.3333%;
+}
+
+.card__img {
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

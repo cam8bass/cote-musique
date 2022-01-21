@@ -14,21 +14,22 @@
     position: absolute;
     top: 20%;
     left: 60%;
-
     color: #fff;
     text-transform: uppercase;
-
+    
     &-main {
       display: block;
       font-family: $font-secondary;
       font-size: 4.5rem;
       margin-bottom: 1.5rem;
+      animation: transpale 3s;
     }
 
     &-sub {
       position: absolute;
       top: 100%;
       left: 80%;
+      animation: opacity 3s;
     }
   }
 }

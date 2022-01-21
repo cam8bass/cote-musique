@@ -1,15 +1,16 @@
-.section__about{
+.section__about {
   border-bottom: 1px solid $color-grey-light-3;
-  
 }
 
-.section__staff{
+.section__staff {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   border-top: 1px solid $color-grey-light-3;
   height: 60vh;
-  background-color: rgb(30, 20, 62);
-  
-  
-  
+  background-image: linear-gradient(to bottom, black, $color-primary-dark);
+}
+
+.section__work {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto-fit, 1fr));
 }
