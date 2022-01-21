@@ -1,22 +1,18 @@
-.staff{
-align-self: center;
-border-right: 1px solid $color-grey-light-1;
+.staff {
+  border-right: 1px solid $color-grey-light-1;
+  align-self: center;
 
-
-
-  &__heading{
+  &__heading {
     font-size: 3.2rem;
     font-family: $font-secondary;
     text-transform: uppercase;
     margin: 1rem;
-    
-
   }
 
-  &__text{
+  &__text {
     margin: 2rem;
     font-size: 2rem;
-    
-
+    text-align: center;
+    width: 80%;
   }
 }
