@@ -1,0 +1,34 @@
+.header {
+  grid-row: 1/2;
+  position: relative;
+
+  &__bg {
+    background-image: url(../../img/bg/bg-1-desk.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 60rem;
+  }
+
+  &__heading {
+    position: absolute;
+    top: 20%;
+    left: 60%;
+
+    color: #fff;
+    text-transform: uppercase;
+
+    &-main {
+      display: block;
+      font-family: $font-secondary;
+      font-size: 4.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &-sub {
+      position: absolute;
+      top: 100%;
+      left: 80%;
+    }
+  }
+}

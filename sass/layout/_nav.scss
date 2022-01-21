@@ -1,0 +1,36 @@
+.nav{
+  grid-row: 2/3;
+  height: 10rem;
+  background-color: $color-black;
+  &__list{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    
+
+  }
+
+  &__items{
+ 
+  }
+
+  &__link{
+text-decoration: none;
+font-size: 2.4rem;
+text-transform: uppercase;
+font-family: $font-secondary;
+color: #fff;
+display: block;
+transition: all .2s;
+backface-visibility: hidden;
+
+&:hover,
+&:active{
+  color: $color-grey-light-1;
+  transform: scale(1.2) rotate(-2deg);
+}
+
+  }
+}
