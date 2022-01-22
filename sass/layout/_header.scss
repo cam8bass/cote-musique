@@ -1,13 +1,15 @@
 .header {
   grid-row: 1/2;
   position: relative;
+  
 
   &__bg {
     background-image: url(../../img/bg/bg-1-desk.jpg);
     background-position: center;
     background-size: cover;
-    width: 100%;
-    height: 60rem;
+   max-width: 100%;
+    height: 80vh;
+    
   }
 
   &__heading {

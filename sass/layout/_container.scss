@@ -1,11 +1,13 @@
 
 .container{
   display: grid;
-  grid-template-rows:  62vh repeat(2, min-content) minmax(min-content, 1fr); 
+  grid-template-rows:  80vh min-content min-content max-content min-content ;  
+
+ // grid-template-rows: 62vh ;
  
 }
 
 .content{
-grid-row: 3/4;
+
   background-color:#FFF;
 }
