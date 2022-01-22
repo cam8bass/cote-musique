@@ -86,8 +86,8 @@ strong {
   background-image: url(../../img/bg/bg-1-desk.jpg);
   background-position: center;
   background-size: cover;
-  width: 100%;
-  height: 60rem;
+  max-width: 100%;
+  height: 80vh;
 }
 
 .header__heading {
@@ -183,9 +183,15 @@ strong {
 
 .section__about {
   border-bottom: 1px solid #f1f1f1;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
 }
 
 .section__staff {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -197,6 +203,9 @@ strong {
 }
 
 .section__work {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  grid-row: 5/6;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(auto-fit, 1fr))[3];
@@ -245,15 +254,12 @@ strong {
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 62vh (min-content)[2] minmax(min-content, 1fr);
-      grid-template-rows: 62vh repeat(2, -webkit-min-content) minmax(-webkit-min-content, 1fr);
-      grid-template-rows: 62vh repeat(2, min-content) minmax(min-content, 1fr);
+  -ms-grid-rows: 80vh min-content min-content max-content min-content;
+      grid-template-rows: 80vh -webkit-min-content -webkit-min-content -webkit-max-content -webkit-min-content;
+      grid-template-rows: 80vh min-content min-content max-content min-content;
 }
 
 .content {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3/4;
   background-color: #FFF;
 }
 
