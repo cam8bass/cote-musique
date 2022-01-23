@@ -1,11 +1,14 @@
 .team {
   justify-self: center;
   align-self: center;
+  margin: 5rem;
 
   &__list {
     display: grid;
     grid-template-columns: min-content max-content;
+
     gap: 2rem;
+
     @media only screen and (max-width: $bp-tab) {
       display: grid;
       grid-template-rows: repeat(2, 1fr);
@@ -23,21 +26,15 @@
       grid-row: 1/2;
       justify-self: center;
     }
-
-
   }
 
   &__details {
     align-self: center;
     margin-left: 2rem;
     @media only screen and (max-width: $bp-tab) {
-    
-    justify-self: center;
-    text-align: center;
-           
-     
-     
-       }
+      justify-self: center;
+      text-align: center;
+    }
   }
 
   &__name {
@@ -46,7 +43,6 @@
     font-weight: 300;
     letter-spacing: 1px;
     color: #fff;
-    
   }
 
   &__text {

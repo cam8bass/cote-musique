@@ -2,7 +2,7 @@
   border-right: 1px solid $color-grey-light-1;
   @media only screen and (max-width: $bp-tab) {
     border-right: none;
- 
+    border-top: 1px solid $color-grey-light-1;
   }
   color: #fff;
   display: grid;
@@ -11,6 +11,9 @@
   gap: 5rem;
   &__heading {
     margin-left: 2rem;
+    @media only screen and (max-width: $bp-tab) {
+      margin: 2rem;
+    }
   }
 
   &__text {
