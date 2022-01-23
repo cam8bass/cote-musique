@@ -1,0 +1,26 @@
+.navbottom {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 10rem);
+    justify-content: center;
+    list-style: none;
+  }
+
+  &__items {
+    justify-self: center;
+  }
+
+  &__link {
+    &-icon {
+      fill: #fff;
+      width: 5rem;
+      height: 5rem;
+      transition: all 0.2s;
+      &:hover,
+      &:active {
+        transform: scale(1.2);
+        fill: $color-tertiary-dark;
+      }
+    }
+  }
+}

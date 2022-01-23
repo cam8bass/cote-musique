@@ -1,0 +1,30 @@
+.footer {
+  border-top: 1px solid #fff;
+  margin-top: 5rem;
+  grid-row: 4/-1;
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  row-gap: 5rem;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-black,
+    $color-secondary-dark
+  );
+
+  &__logo-box {
+    margin-top: 5rem;
+    align-self: center;
+    justify-self: center;
+  }
+
+  &__logo-img {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  &__copyright {
+    color: #fff;
+    justify-self: end;
+    margin: 2rem;
+  }
+}
