@@ -1,19 +1,22 @@
 .staff {
+  
   border-right: 1px solid $color-grey-light-1;
-  align-self: center;
   color: #fff;
-  margin: 2rem;
-
+  display: grid;
+  align-self: center;
+  grid-template-rows: repeat(2, min-content);
+  gap: 5rem;
   &__heading {
     font-size: 3.2rem;
     font-family: $font-secondary;
     text-transform: uppercase;
-    margin-bottom: 1.2rem;
+    margin-left: 2rem;
   }
 
   &__text {
     font-size: 2rem;
     text-align: center;
+    justify-self: center;
     width: 80%;
   }
 }
