@@ -28,4 +28,8 @@
     font-size: 1.6rem;
     margin: 2rem;
   }
+
+  @media only screen and (min-width: $bp-mob) {
+    grid-row: 6/7;
+  }
 }

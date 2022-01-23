@@ -9,14 +9,14 @@
 @import "base/utilities";
 
 @import "layout/header";
-@import "layout/navbar";
-@import "layout/section";
-@import "layout/about";
-@import "layout/container";
 @import "layout/nav";
 @import "layout/footer";
+@import "layout/mob";
 
 @import "components/staff";
 @import "components/team";
 @import "components/card";
 @import "components/navbottom";
+@import "components/section";
+@import "components/container";
+@import "components/about";

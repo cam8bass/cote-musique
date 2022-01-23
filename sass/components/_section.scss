@@ -11,6 +11,11 @@
     grid-template-rows: minmax(40vw, 1fr) 50vw;
     grid-template-columns: 1fr;
   }
+  @media only screen and (max-width: $bp-mob) {
+    grid-row: 2/3;
+    
+  }
+  
 }
 
 .section__staff {
@@ -39,6 +44,9 @@
 
     grid-template-columns: auto;
   }
+  @media only screen and (max-width: $bp-mob) {
+    grid-row: 3/4;
+  }
 }
 
 .section__work {
@@ -47,9 +55,15 @@
   grid-template-columns: repeat(auto-fit, minmax(28vw, 1fr));
   gap: 5rem;
   margin: 5rem;
+  @media only screen and (max-width: $bp-mob) {
+    grid-row: 5/6;
+  }
 
   &-heading {
     margin: 4rem 10rem;
     grid-row: 3/4;
+    @media only screen and (max-width: $bp-mob) {
+      grid-row: 4/5;
+    }
   }
 }

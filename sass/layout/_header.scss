@@ -10,6 +10,10 @@
     background-image: url(../../img/bg/bg-1-tab.jpg);
   }
 
+  @media only screen and (max-width: $bp-mob) {
+   display: none;
+  }
+
   &__bg {
   }
 
