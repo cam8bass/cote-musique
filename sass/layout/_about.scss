@@ -1,7 +1,7 @@
 .about {
-  height: 40rem;
+  height: 50rem;
   display: grid;
-  grid-template-columns: 1fr 1fr ;
+  grid-template-columns: minmax(min-content, 1fr) 1fr;
   background-color: black;
  
   &__main {
@@ -28,7 +28,8 @@
     background-image: url(../../img/live/live-1-desk.jpg);
     background-position: center;
     background-size: cover;
-    width: 100%;
+    max-width: 100%;
+    height: auto;
 
   
     

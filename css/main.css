@@ -68,7 +68,6 @@ html {
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: black;
 }
 
 strong {
@@ -80,14 +79,11 @@ strong {
   -ms-grid-row-span: 1;
   grid-row: 1/2;
   position: relative;
-}
-
-.header__bg {
   background-image: url(../../img/bg/bg-1-desk.jpg);
   background-position: center;
   background-size: cover;
-  max-width: 100%;
-  height: 80vh;
+  min-width: 100%;
+  height: auto;
 }
 
 .header__heading {
@@ -182,10 +178,10 @@ strong {
 }
 
 .section__about {
-  border-bottom: 1px solid #f1f1f1;
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
+  border-bottom: 1px solid #f1f1f1;
 }
 
 .section__staff {
@@ -198,8 +194,10 @@ strong {
       grid-template-columns: repeat(2, 1fr);
   border-top: 1px solid #f1f1f1;
   height: 60vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(#0a031d));
-  background-image: linear-gradient(to bottom, black, #0a031d);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(10, 3, 29, 0.9))), url(../../img/bg/bg-2-tab.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(10, 3, 29, 0.9)), url(../../img/bg/bg-2-tab.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .section__work {
@@ -208,16 +206,17 @@ strong {
   grid-row: 5/6;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(auto-fit, 1fr))[3];
-      grid-template-columns: repeat(3, minmax(auto-fit, 1fr));
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
 }
 
 .about {
-  height: 40rem;
+  height: 50rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: minmax(min-content, 1fr) 1fr;
+      grid-template-columns: minmax(-webkit-min-content, 1fr) 1fr;
+      grid-template-columns: minmax(min-content, 1fr) 1fr;
   background-color: black;
 }
 
@@ -248,19 +247,16 @@ strong {
   background-image: url(../../img/live/live-1-desk.jpg);
   background-position: center;
   background-size: cover;
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 80vh min-content min-content max-content min-content;
-      grid-template-rows: 80vh -webkit-min-content -webkit-min-content -webkit-max-content -webkit-min-content;
-      grid-template-rows: 80vh min-content min-content max-content min-content;
-}
-
-.content {
-  background-color: #FFF;
+  -ms-grid-rows: 47vw min-content 30vw min-content min-content;
+      grid-template-rows: 47vw -webkit-min-content 30vw -webkit-min-content -webkit-min-content;
+      grid-template-rows: 47vw min-content 30vw min-content min-content;
 }
 
 .nav {
@@ -287,7 +283,6 @@ strong {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 0;
 }
 
 .nav__link {
@@ -297,8 +292,8 @@ strong {
   font-family: "Open Sans";
   color: #fff;
   display: block;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
@@ -311,23 +306,29 @@ strong {
 
 .staff {
   border-right: 1px solid #c6c6c6;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
   color: #fff;
-  margin: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-rows: (min-content)[2];
+      grid-template-rows: repeat(2, -webkit-min-content);
+      grid-template-rows: repeat(2, min-content);
+  gap: 5rem;
 }
 
 .staff__heading {
   font-size: 3.2rem;
   font-family: "Open Sans";
   text-transform: uppercase;
-  margin-bottom: 1.2rem;
+  margin-left: 2rem;
 }
 
 .staff__text {
   font-size: 2rem;
   text-align: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
   width: 80%;
 }
 
@@ -365,7 +366,7 @@ strong {
 
 .team__name {
   font-size: 2.2rem;
-  color: #FFF;
+  color: #fff;
 }
 
 .team__text {

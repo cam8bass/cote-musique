@@ -1,13 +1,4 @@
-
-.container{
+.container {
   display: grid;
-  grid-template-rows:  80vh min-content min-content max-content min-content ;  
-
- // grid-template-rows: 62vh ;
- 
-}
-
-.content{
-
-  background-color:#FFF;
+  grid-template-rows: 47vw min-content 30vw min-content min-content;
 }
