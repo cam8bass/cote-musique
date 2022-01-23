@@ -30,3 +30,9 @@ $color-black-light: #383838;
 $font-primary: "Roboto";
 $font-secondary: "Open Sans";
 $font-text: "Lato";
+
+// === BREAKPOINT ===
+$bp-largest: 81.25em; // 1300px   1300/16= 81.25em
+$bp-larg: 72.62em; //1162px
+$bp-tab: 62.5em; // 1000px
+$bp-mob: 37.5em; // 600px

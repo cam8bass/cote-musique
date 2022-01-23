@@ -1,11 +1,20 @@
 .section__about {
   grid-row: 1/2;
   border-bottom: 1px solid $color-grey-light-3;
+  height: 50rem;
+  background-color: black;
+  display: grid;
+  grid-template-columns: minmax(min-content, 1fr) 1fr;
+
+  @media only screen and (max-width: $bp-tab) {
+    display: grid;
+    grid-template-rows: minmax(40vw, 1fr) 50vw;
+    grid-template-columns: 1fr;
+  }
 }
 
 .section__staff {
   grid-row: 3/4;
-
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   border-top: 1px solid $color-grey-light-3;
@@ -16,16 +25,26 @@
       rgba(black, 0.9),
       rgba($color-primary-dark, 0.9)
     ),
-    url(../../img/bg/bg-2-tab.jpg);
+    url(../../img/bg/bg-2-desk.jpg);
 
   background-position: center;
   background-size: cover;
+  @media only screen and (max-width: $bp-tab) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(black, 0.9),
+        rgba($color-primary-dark, 0.9)
+      ),
+      url(../../img/bg/bg-2-tab.jpg);
+
+    grid-template-columns: auto;
+  }
 }
 
 .section__work {
   grid-row: 4/5;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(28vw, 1fr));
   gap: 5rem;
   margin: 5rem;
 

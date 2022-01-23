@@ -1,14 +1,12 @@
 .about {
-  height: 50rem;
-  display: grid;
-  grid-template-columns: minmax(min-content, 1fr) 1fr;
-  background-color: black;
-
+  align-self: center;
   &__main {
     grid-column: 1/2;
-    align-self: center;
     margin: 2rem;
     text-align: center;
+    @media only screen and (max-width: $bp-tab) {
+      grid-row: 1/2;
+    }
     &-heading {
       margin-bottom: 2rem;
     }
@@ -27,5 +25,11 @@
     background-size: cover;
     max-width: 100%;
     height: auto;
+
+    @media only screen and (max-width: $bp-tab) {
+      background-image: url(../../img/live/live-1-tab.jpg);
+      grid-row: 2/-1;
+      grid-column: 1/-1;
+    }
   }
 }
