@@ -2,3 +2,9 @@
 @mixin googlefonts($font) {
   @import url("https://fonts.googleapis.com/css2?family=#{$font}:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
 }
+
+// === BOX SHADOW ===
+@mixin shadowhite {
+  -webkit-box-shadow: 2px 0px 15px 5px rgba(255, 255, 255, 0.11);
+  box-shadow: 2px 0px 15px 5px rgba(255, 255, 255, 0.11);
+}

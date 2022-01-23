@@ -3,23 +3,20 @@
   display: grid;
   grid-template-columns: minmax(min-content, 1fr) 1fr;
   background-color: black;
- 
+
   &__main {
     grid-column: 1/2;
     align-self: center;
     margin: 2rem;
     text-align: center;
     &-heading {
-      font-size: 4.2rem;
       margin-bottom: 2rem;
-      color: #FFF;
-   
     }
 
     &-text {
       font-size: 2rem;
-      color: #FFF;
- 
+      font-family: $font-text;
+      color: #fff;
     }
   }
 
@@ -30,9 +27,5 @@
     background-size: cover;
     max-width: 100%;
     height: auto;
-
-  
-    
-   
   }
 }
