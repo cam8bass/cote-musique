@@ -258,16 +258,14 @@ strong {
 }
 
 .section__staff {
-  -ms-grid-row: 3;
+  -ms-grid-row: 2;
   -ms-grid-row-span: 1;
-  grid-row: 3/4;
+  grid-row: 2/3;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  border-top: 1px solid #f1f1f1;
   border-bottom: 1px solid #f1f1f1;
-  height: 60vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(10, 3, 29, 0.9))), url(../../img/bg/bg-2-desk.jpg);
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(10, 3, 29, 0.9)), url(../../img/bg/bg-2-desk.jpg);
   background-position: center;
@@ -296,16 +294,19 @@ strong {
 }
 
 .section__work-heading {
-  margin: 2rem 10rem;
-  -ms-grid-row: 2;
+  margin: 4rem 10rem;
+  -ms-grid-row: 3;
   -ms-grid-row-span: 1;
-  grid-row: 2/3;
+  grid-row: 3/4;
 }
 
 .about {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  -ms-grid-rows: (min-content)[4];
+      grid-template-rows: repeat(4, -webkit-min-content);
+      grid-template-rows: repeat(4, min-content);
 }
 
 .about__main {
@@ -348,6 +349,7 @@ strong {
     background-image: url(../../img/live/live-1-tab.jpg);
     grid-row: 2/-1;
     grid-column: 1/-1;
+    border-top: 1px solid #c6c6c6;
   }
 }
 
@@ -368,13 +370,14 @@ strong {
   -ms-grid-rows: (min-content)[4];
       grid-template-rows: repeat(4, -webkit-min-content);
       grid-template-rows: repeat(4, min-content);
+  grid-template-rows: repeat(4, min-content);
 }
 
 @media only screen and (max-width: 62.5em) {
   .content {
-    -ms-grid-rows: 90vw min-content minmax(min-content, 1fr);
-        grid-template-rows: 90vw -webkit-min-content minmax(-webkit-min-content, 1fr);
-        grid-template-rows: 90vw min-content minmax(min-content, 1fr);
+    -ms-grid-rows: 90vw (min-content)[3];
+        grid-template-rows: 90vw repeat(3, -webkit-min-content);
+        grid-template-rows: 90vw repeat(3, min-content);
   }
 }
 
@@ -430,9 +433,9 @@ strong {
 }
 
 .footer {
+  grid-row: 4/-1;
   border-top: 1px solid #fff;
   margin-top: 5rem;
-  grid-row: 4/-1;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: (min-content)[3];
@@ -481,11 +484,18 @@ strong {
 @media only screen and (max-width: 62.5em) {
   .staff {
     border-right: none;
+    border-top: 1px solid #c6c6c6;
   }
 }
 
 .staff__heading {
   margin-left: 2rem;
+}
+
+@media only screen and (max-width: 62.5em) {
+  .staff__heading {
+    margin: 2rem;
+  }
 }
 
 .staff__text {
@@ -503,6 +513,7 @@ strong {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  margin: 5rem;
 }
 
 .team__list {

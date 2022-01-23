@@ -14,12 +14,12 @@
 }
 
 .section__staff {
-  grid-row: 3/4;
+  grid-row: 2/3;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  border-top: 1px solid $color-grey-light-3;
+
   border-bottom: 1px solid $color-grey-light-3;
-  height: 60vh;
+
   background-image: linear-gradient(
       to bottom,
       rgba(black, 0.9),
@@ -49,7 +49,7 @@
   margin: 5rem;
 
   &-heading {
-    margin: 2rem 10rem;
-    grid-row: 2/3;
+    margin: 4rem 10rem;
+    grid-row: 3/4;
   }
 }

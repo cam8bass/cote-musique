@@ -1,5 +1,7 @@
 .about {
   align-self: center;
+  grid-template-rows: repeat(4, min-content);
+
   &__main {
     grid-column: 1/2;
     margin: 2rem;
@@ -30,6 +32,7 @@
       background-image: url(../../img/live/live-1-tab.jpg);
       grid-row: 2/-1;
       grid-column: 1/-1;
+      border-top: 1px solid $color-grey-light-1;
     }
   }
 }
