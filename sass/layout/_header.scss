@@ -6,6 +6,9 @@
   background-size: cover;
   min-width: 100%;
   height: auto;
+  @media only screen and (max-width: $bp-tab) {
+    background-image: url(../../img/bg/bg-1-tab.jpg);
+  }
 
   &__bg {
   }
@@ -16,6 +19,10 @@
     left: 60%;
     color: #fff;
     text-transform: uppercase;
+    @media only screen and (max-width: $bp-tab) {
+      left: 41%;
+      top: 10%;
+    }
 
     &-main {
       display: block;
@@ -32,6 +39,12 @@
       top: 100%;
       left: 80%;
       animation: opacity 3s;
+      @media only screen and (max-width: $bp-larg) {
+        left: 70%;
+      }
+      @media only screen and (max-width: $bp-tab) {
+        left: 60%;
+      }
     }
   }
 }

@@ -1,5 +1,9 @@
 .staff {
   border-right: 1px solid $color-grey-light-1;
+  @media only screen and (max-width: $bp-tab) {
+    border-right: none;
+ 
+  }
   color: #fff;
   display: grid;
   align-self: center;

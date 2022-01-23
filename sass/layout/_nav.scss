@@ -3,6 +3,9 @@
   background-color: $color-black;
   align-self: center;
   padding: 1rem;
+  @media only screen and (max-width: $bp-mob) {
+   padding: 0;
+  }
   border-top: 1px solid $color-grey-light-3;
   border-bottom: 1px solid $color-grey-light-3;
   &__list {

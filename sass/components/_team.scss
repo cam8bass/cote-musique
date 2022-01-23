@@ -6,6 +6,12 @@
     display: grid;
     grid-template-columns: min-content max-content;
     gap: 2rem;
+    @media only screen and (max-width: $bp-tab) {
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(4, minmax(min-content, 1fr));
+      gap: 0;
+    }
   }
 
   &__img {
@@ -13,11 +19,25 @@
     height: 10rem;
     border-radius: 50%;
     @include shadowhite;
+    @media only screen and (max-width: $bp-tab) {
+      grid-row: 1/2;
+      justify-self: center;
+    }
+
+
   }
 
   &__details {
     align-self: center;
     margin-left: 2rem;
+    @media only screen and (max-width: $bp-tab) {
+    
+    justify-self: center;
+    text-align: center;
+           
+     
+     
+       }
   }
 
   &__name {
@@ -26,6 +46,7 @@
     font-weight: 300;
     letter-spacing: 1px;
     color: #fff;
+    
   }
 
   &__text {
