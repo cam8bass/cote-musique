@@ -22,6 +22,10 @@ $color-grey-dark-3: #616161;
 $color-black: #131313;
 $color-black-light: #383838;
 
+// === BORDER ===
+$border-up: 1px solid $color-grey-light-1;
+$border-down: 1px solid $color-grey-light-1;
+
 // === FONTS ===
 @include googlefonts("Open+Sans"); // font-family: 'Open Sans', sans-serif;
 @include googlefonts("Roboto"); // font-family: 'Roboto', sans-serif;

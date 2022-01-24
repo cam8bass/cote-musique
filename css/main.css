@@ -619,7 +619,7 @@ strong {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  border-bottom: 1px solid #f1f1f1;
+  border-bottom: 1px solid #c6c6c6;
   height: 50rem;
   background-color: black;
   display: -ms-grid;
@@ -657,7 +657,7 @@ strong {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  border-bottom: 1px solid #f1f1f1;
+  border-bottom: 1px solid #c6c6c6;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(10, 3, 29, 0.9))), url(../../img/bg/bg-2-desk.jpg);
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(10, 3, 29, 0.9)), url(../../img/bg/bg-2-desk.jpg);
   background-position: center;
@@ -759,6 +759,22 @@ strong {
   text-align: center;
 }
 
+.about__main-heading {
+  margin-bottom: 2rem;
+}
+
+.about__main-text {
+  font-size: 2rem;
+  font-family: "Lato";
+  color: #fff;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .about__main-text {
+    text-align: center;
+  }
+}
+
 @media only screen and (max-width: 62.5em) {
   .about__main {
     -ms-grid-row: 1;
@@ -773,22 +789,6 @@ strong {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
-  }
-}
-
-.about__main-heading {
-  margin-bottom: 2rem;
-}
-
-.about__main-text {
-  font-size: 2rem;
-  font-family: "Lato";
-  color: #fff;
-}
-
-@media only screen and (max-width: 37.5em) {
-  .about__main-text {
-    text-align: center;
   }
 }
 

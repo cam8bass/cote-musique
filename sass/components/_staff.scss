@@ -8,7 +8,7 @@
   
   @media only screen and (max-width: $bp-tab) {
     border-right: none;
-    border-top: 1px solid $color-grey-light-1;
+    border-top: $border-up;
   }
 
   &__heading {
