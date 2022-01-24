@@ -70,3 +70,15 @@
     background-color: $color-black;
   }
 }
+
+// === HEADER EVENT.HTML PAGE ===
+.header-event{
+  background-image: url(../img/bg/bg-3-desk.jpg);
+  @media only screen and (max-width: $bp-tab) {
+    background-image: url(../img/bg/bg-3-tab.jpg);
+  }
+  @media only screen and (max-width: $bp-mob) {
+    background-image: none;
+    background-color: $color-black;
+  }
+}
