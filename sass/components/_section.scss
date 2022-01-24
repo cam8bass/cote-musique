@@ -12,19 +12,16 @@
     grid-template-columns: 1fr;
   }
   @media only screen and (max-width: $bp-mob) {
-    grid-row: 2/3;
-    
+    grid-template-rows: 50vw min-content;
+    border-bottom: none;
   }
-  
 }
 
 .section__staff {
   grid-row: 2/3;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-
   border-bottom: 1px solid $color-grey-light-3;
-
   background-image: linear-gradient(
       to bottom,
       rgba(black, 0.9),
@@ -44,9 +41,6 @@
 
     grid-template-columns: auto;
   }
-  @media only screen and (max-width: $bp-mob) {
-    grid-row: 3/4;
-  }
 }
 
 .section__work {
@@ -56,14 +50,12 @@
   gap: 5rem;
   margin: 5rem;
   @media only screen and (max-width: $bp-mob) {
-    grid-row: 5/6;
+    grid-template-columns: min-content;
+    justify-self: center;
   }
 
   &-heading {
     margin: 4rem 10rem;
     grid-row: 3/4;
-    @media only screen and (max-width: $bp-mob) {
-      grid-row: 4/5;
-    }
   }
 }

@@ -4,6 +4,9 @@
     grid-template-columns: repeat(auto-fit, 10rem);
     justify-content: center;
     list-style: none;
+    @media only screen and (max-width: $bp-mob) {
+      grid-template-columns: repeat(auto-fit, 8rem);
+    }
   }
 
   &__items {

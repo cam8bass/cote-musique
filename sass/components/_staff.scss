@@ -1,14 +1,16 @@
 .staff {
   border-right: 1px solid $color-grey-light-1;
-  @media only screen and (max-width: $bp-tab) {
-    border-right: none;
-    border-top: 1px solid $color-grey-light-1;
-  }
   color: #fff;
   display: grid;
   align-self: center;
   grid-template-rows: repeat(2, min-content);
   gap: 5rem;
+  
+  @media only screen and (max-width: $bp-tab) {
+    border-right: none;
+    border-top: 1px solid $color-grey-light-1;
+  }
+
   &__heading {
     margin-left: 2rem;
     @media only screen and (max-width: $bp-tab) {

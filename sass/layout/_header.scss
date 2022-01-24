@@ -6,12 +6,14 @@
   background-size: cover;
   min-width: 100%;
   height: auto;
+  border-bottom: 1px solid $color-grey-light-1;
   @media only screen and (max-width: $bp-tab) {
     background-image: url(../img/bg/bg-1-tab.jpg);
   }
-
   @media only screen and (max-width: $bp-mob) {
-   display: none;
+    background-image: none;
+ 
+    background-color: $color-black;
   }
 
   &__bg {
@@ -27,6 +29,13 @@
       left: 41%;
       top: 10%;
     }
+    @media only screen and (max-width: $bp-mob) {
+      position: relative;
+      left: 0;
+      top: 0;
+      display: inline-block;
+      margin: 3rem 1rem;
+    }
 
     &-main {
       display: block;
@@ -34,6 +43,10 @@
       font-size: 4.5rem;
       margin-bottom: 1.5rem;
       animation: transpale 3s;
+      @media only screen and (max-width: $bp-mob) {
+        font-size: 3.5rem;
+        
+      }
     }
 
     &-sub {
@@ -47,7 +60,10 @@
         left: 70%;
       }
       @media only screen and (max-width: $bp-tab) {
-        left: 60%;
+        left: 55%;
+      }
+      @media only screen and (max-width: $bp-mob) {
+        display: none;
       }
     }
   }

@@ -1,7 +1,6 @@
 .about {
   align-self: center;
-  grid-template-rows: repeat(4, min-content);
-
+  
   &__main {
     grid-column: 1/2;
     margin: 2rem;
@@ -9,14 +8,27 @@
     @media only screen and (max-width: $bp-tab) {
       grid-row: 1/2;
     }
+
+    @media only screen and (max-width: $bp-mob) {
+      text-align: start;
+      grid-row: 2/3;
+      
+    }
+
+
     &-heading {
       margin-bottom: 2rem;
+     
     }
 
     &-text {
       font-size: 2rem;
       font-family: $font-text;
       color: #fff;
+      @media only screen and (max-width: $bp-mob) {
+        text-align: center;
+        
+      }
     }
   }
 
@@ -33,6 +45,12 @@
       grid-row: 2/-1;
       grid-column: 1/-1;
       border-top: 1px solid $color-grey-light-1;
+    }
+    @media only screen and (max-width: $bp-mob) {
+      background-image: url(../img/live/live-1-mob.jpg);
+      border-top: none;
+      grid-row: 1/2;
+      
     }
   }
 }
