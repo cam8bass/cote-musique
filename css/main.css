@@ -114,18 +114,11 @@ strong {
   -ms-grid-row-span: 1;
   grid-row: 1/2;
   position: relative;
-  background-image: url(../img/bg/bg-1-desk.jpg);
   background-position: center;
   background-size: cover;
   min-width: 100%;
   height: auto;
   border-bottom: 1px solid #c6c6c6;
-}
-
-@media only screen and (max-width: 62.5em) {
-  .header {
-    background-image: url(../img/bg/bg-1-tab.jpg);
-  }
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -200,6 +193,23 @@ strong {
 @media only screen and (max-width: 37.5em) {
   .header__heading-sub {
     display: none;
+  }
+}
+
+.header-index {
+  background-image: url(../img/bg/bg-1-desk.jpg);
+}
+
+@media only screen and (max-width: 62.5em) {
+  .header-index {
+    background-image: url(../img/bg/bg-1-tab.jpg);
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .header-index {
+    background-image: none;
+    background-color: #131313;
   }
 }
 
