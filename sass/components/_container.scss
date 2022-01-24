@@ -1,27 +1,23 @@
 .container {
   display: grid;
 
-  grid-template-rows: 47vw repeat(3, min-content);
+  grid-template-rows: 50vw repeat(2, min-content);
 
   @media only screen and (max-width: $bp-mob) {
-    grid-template-rows: repeat(5, min-content) ;
-    
+    grid-template-rows: 10rem repeat(3, min-content);
   }
 }
 
 .content {
-
-  grid-row: 3/4;
+  grid-row: 2/3;
   display: grid;
   grid-template-rows: repeat(4, min-content);
-  
+
   @media only screen and (max-width: $bp-tab) {
     grid-template-rows: 90vw repeat(3, min-content);
   }
-  
+
   @media only screen and (max-width: $bp-mob) {
-    grid-template-rows: none;
-   
-  } 
- 
+    grid-template-rows: minmax(70rem, 100vw) repeat(3, min-content);
+  }
 }

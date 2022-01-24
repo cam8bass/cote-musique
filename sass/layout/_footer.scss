@@ -1,5 +1,5 @@
 .footer {
-  grid-row: 4/-1;
+  grid-row: 3/4;
   border-top: 1px solid #fff;
   margin-top: 5rem;
   display: grid;
@@ -10,6 +10,7 @@
     $color-black,
     $color-secondary-dark
   );
+ 
 
   &__logo-box {
     margin-top: 5rem;

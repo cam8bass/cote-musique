@@ -3,6 +3,11 @@
   color: #fff;
   @include shadowhite;
   transition: all 0.2s;
+  @media only screen and (max-width: $bp-mob) {
+    min-width: 80vw;
+    height: auto;
+   
+  }
 
   &:hover,
   &:active {
