@@ -2,21 +2,16 @@
   grid-row: 1/2;
   position: relative;
   background-image: url(../img/bg/bg-1-desk.jpg);
-  background-position: center;
-  background-size: cover;
+  @include background-center;
   min-width: 100%;
   height: auto;
-  border-bottom: 1px solid $color-grey-light-1;
+  border-bottom: $border-down;
   @media only screen and (max-width: $bp-tab) {
     background-image: url(../img/bg/bg-1-tab.jpg);
   }
   @media only screen and (max-width: $bp-mob) {
     background-image: none;
- 
     background-color: $color-black;
-  }
-
-  &__bg {
   }
 
   &__heading {

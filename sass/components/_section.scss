@@ -1,6 +1,6 @@
 .section__about {
   grid-row: 1/2;
-  border-bottom: 1px solid $color-grey-light-3;
+  border-bottom: $border-down;
   height: 50rem;
   background-color: black;
   display: grid;
@@ -21,16 +21,14 @@
   grid-row: 2/3;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  border-bottom: 1px solid $color-grey-light-3;
+  border-bottom: $border-down;
   background-image: linear-gradient(
       to bottom,
       rgba(black, 0.9),
       rgba($color-primary-dark, 0.9)
     ),
     url(../../img/bg/bg-2-desk.jpg);
-
-  background-position: center;
-  background-size: cover;
+  @include background-center;
   @media only screen and (max-width: $bp-tab) {
     background-image: linear-gradient(
         to bottom,

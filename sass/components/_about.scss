@@ -1,10 +1,25 @@
 .about {
   align-self: center;
-  
   &__main {
     grid-column: 1/2;
     margin: 2rem;
     text-align: center;
+
+    &-heading {
+      margin-bottom: 2rem;
+    }
+
+    &-text {
+      font-size: 2rem;
+      font-family: $font-text;
+      color: #fff;
+
+      @media only screen and (max-width: $bp-mob) {
+        text-align: center;
+      }
+    }
+
+    // === MEDIA ABOUT__MAIN ===
     @media only screen and (max-width: $bp-tab) {
       grid-row: 1/2;
     }
@@ -12,31 +27,13 @@
     @media only screen and (max-width: $bp-mob) {
       text-align: start;
       grid-row: 2/3;
-      
-    }
-
-
-    &-heading {
-      margin-bottom: 2rem;
-     
-    }
-
-    &-text {
-      font-size: 2rem;
-      font-family: $font-text;
-      color: #fff;
-      @media only screen and (max-width: $bp-mob) {
-        text-align: center;
-        
-      }
     }
   }
 
   &__picture {
     grid-column: 2/-1;
     background-image: url(../img/live/live-1-desk.jpg);
-    background-position: center;
-    background-size: cover;
+    @include background-center;
     max-width: 100%;
     height: auto;
 
@@ -44,13 +41,12 @@
       background-image: url(../img/live/live-1-tab.jpg);
       grid-row: 2/-1;
       grid-column: 1/-1;
-      border-top: 1px solid $color-grey-light-1;
+      border-top: $border-up;
     }
     @media only screen and (max-width: $bp-mob) {
       background-image: url(../img/live/live-1-mob.jpg);
       border-top: none;
       grid-row: 1/2;
-      
     }
   }
 }
