@@ -728,7 +728,7 @@ strong {
   }
 }
 
-.content {
+.content-index {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
@@ -740,7 +740,7 @@ strong {
 }
 
 @media only screen and (max-width: 62.5em) {
-  .content {
+  .content-index {
     -ms-grid-rows: 90vw (min-content)[3];
         grid-template-rows: 90vw repeat(3, -webkit-min-content);
         grid-template-rows: 90vw repeat(3, min-content);
@@ -748,11 +748,17 @@ strong {
 }
 
 @media only screen and (max-width: 37.5em) {
-  .content {
+  .content-index {
     -ms-grid-rows: minmax(70rem, 100vw) (min-content)[3];
         grid-template-rows: minmax(70rem, 100vw) repeat(3, -webkit-min-content);
         grid-template-rows: minmax(70rem, 100vw) repeat(3, min-content);
   }
+}
+
+.content-event {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
 }
 
 .about {
