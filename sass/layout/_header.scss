@@ -1,14 +1,10 @@
 .header {
   grid-row: 1/2;
   position: relative;
-  background-image: url(../img/bg/bg-1-desk.jpg);
   @include background-center;
   min-width: 100%;
   height: auto;
   border-bottom: $border-down;
-  @media only screen and (max-width: $bp-tab) {
-    background-image: url(../img/bg/bg-1-tab.jpg);
-  }
   @media only screen and (max-width: $bp-mob) {
     background-image: none;
     background-color: $color-black;
@@ -40,7 +36,6 @@
       animation: transpale 3s;
       @media only screen and (max-width: $bp-mob) {
         font-size: 3.5rem;
-        
       }
     }
 
@@ -61,5 +56,17 @@
         display: none;
       }
     }
+  }
+}
+
+// === HEADER INDEX.HTML PAGE ===
+.header-index {
+  background-image: url(../img/bg/bg-1-desk.jpg);
+  @media only screen and (max-width: $bp-tab) {
+    background-image: url(../img/bg/bg-1-tab.jpg);
+  }
+  @media only screen and (max-width: $bp-mob) {
+    background-image: none;
+    background-color: $color-black;
   }
 }
