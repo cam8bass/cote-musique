@@ -107,7 +107,7 @@ strong {
   -ms-grid-row-span: 1;
   grid-row: 1/2;
   position: relative;
-  background-image: url(../../img/bg/bg-1-desk.jpg);
+  background-image: url(../img/bg/bg-1-desk.jpg);
   background-position: center;
   background-size: cover;
   min-width: 100%;
@@ -116,7 +116,7 @@ strong {
 
 @media only screen and (max-width: 62.5em) {
   .header {
-    background-image: url(../../img/bg/bg-1-tab.jpg);
+    background-image: url(../img/bg/bg-1-tab.jpg);
   }
 }
 
@@ -720,7 +720,7 @@ strong {
 
 .about__picture {
   grid-column: 2/-1;
-  background-image: url(../../img/live/live-1-desk.jpg);
+  background-image: url(../img/live/live-1-desk.jpg);
   background-position: center;
   background-size: cover;
   max-width: 100%;
@@ -729,7 +729,7 @@ strong {
 
 @media only screen and (max-width: 62.5em) {
   .about__picture {
-    background-image: url(../../img/live/live-1-tab.jpg);
+    background-image: url(../img/live/live-1-tab.jpg);
     grid-row: 2/-1;
     grid-column: 1/-1;
     border-top: 1px solid #c6c6c6;
