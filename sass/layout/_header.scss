@@ -1,13 +1,13 @@
 .header {
   grid-row: 1/2;
   position: relative;
-  background-image: url(../../img/bg/bg-1-desk.jpg);
+  background-image: url(../img/bg/bg-1-desk.jpg);
   background-position: center;
   background-size: cover;
   min-width: 100%;
   height: auto;
   @media only screen and (max-width: $bp-tab) {
-    background-image: url(../../img/bg/bg-1-tab.jpg);
+    background-image: url(../img/bg/bg-1-tab.jpg);
   }
 
   @media only screen and (max-width: $bp-mob) {
