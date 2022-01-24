@@ -27,7 +27,7 @@
       rgba(black, 0.9),
       rgba($color-primary-dark, 0.9)
     ),
-    url(../../img/bg/bg-2-desk.jpg);
+    url(../img/bg/bg-2-desk.jpg);
   @include background-center;
   @media only screen and (max-width: $bp-tab) {
     background-image: linear-gradient(
@@ -35,7 +35,7 @@
         rgba(black, 0.9),
         rgba($color-primary-dark, 0.9)
       ),
-      url(../../img/bg/bg-2-tab.jpg);
+      url(../img/bg/bg-2-tab.jpg);
 
     grid-template-columns: auto;
   }

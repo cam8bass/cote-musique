@@ -658,16 +658,16 @@ strong {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   border-bottom: 1px solid #c6c6c6;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(10, 3, 29, 0.9))), url(../../img/bg/bg-2-desk.jpg);
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(10, 3, 29, 0.9)), url(../../img/bg/bg-2-desk.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(10, 3, 29, 0.9))), url(../img/bg/bg-2-desk.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(10, 3, 29, 0.9)), url(../img/bg/bg-2-desk.jpg);
   background-position: center;
   background-size: cover;
 }
 
 @media only screen and (max-width: 62.5em) {
   .section__staff {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(10, 3, 29, 0.9))), url(../../img/bg/bg-2-tab.jpg);
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(10, 3, 29, 0.9)), url(../../img/bg/bg-2-tab.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(10, 3, 29, 0.9))), url(../img/bg/bg-2-tab.jpg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(10, 3, 29, 0.9)), url(../img/bg/bg-2-tab.jpg);
     -ms-grid-columns: auto;
         grid-template-columns: auto;
   }
