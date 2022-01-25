@@ -4,11 +4,11 @@ strong {
 
 .heading-4 {
   font-size: 3.5rem;
-  text-transform: uppercase;
-  color: #fff;
   letter-spacing: 2px;
+  text-transform: uppercase;
   font-family: $font-secondary;
   font-weight: 400;
+  color: #fff;
 
   @media only screen and (max-width: $bp-mob) {
     font-size: 2.5rem;
@@ -19,11 +19,11 @@ strong {
 .heading-2 {
   grid-row: 1/2;
   font-size: 7.5rem;
-  color: #fff;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-family: $font-primary;
   text-align: center;
+  color: #fff;
   margin: 8rem;
   background-image: linear-gradient(to right, $color-secondary, $color-tertiary-light);
   -webkit-background-clip: text;

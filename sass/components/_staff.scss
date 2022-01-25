@@ -1,14 +1,14 @@
 .staff {
-  border-right: 1px solid $color-grey-light-1;
-  color: #fff;
   display: grid;
   align-self: center;
   grid-template-rows: repeat(2, min-content);
   gap: 5rem;
+  border-right: $border;
+  color: #fff;
   
   @media only screen and (max-width: $bp-tab) {
     border-right: none;
-    border-top: $border-up;
+    border-top: $border;
   }
 
   &__heading {
@@ -19,10 +19,10 @@
   }
 
   &__text {
-    font-size: 2rem;
-    font-family: $font-text;
     text-align: center;
     justify-self: center;
     width: 80%;
+    font-size: 2rem;
+    font-family: $font-text;
   }
 }

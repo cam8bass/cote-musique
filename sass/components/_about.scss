@@ -41,7 +41,7 @@
       background-image: url(../img/live/live-1-tab.jpg);
       grid-row: 2/-1;
       grid-column: 1/-1;
-      border-top: $border-up;
+      border-top: $border;
     }
     @media only screen and (max-width: $bp-mob) {
       background-image: url(../img/live/live-1-mob.jpg);

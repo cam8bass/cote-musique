@@ -1,10 +1,10 @@
 .header {
   grid-row: 1/2;
   position: relative;
-  @include background-center;
   min-width: 100%;
   height: auto;
-  border-bottom: $border-down;
+  @include background-center;
+  border-bottom: $border;
   @media only screen and (max-width: $bp-mob) {
     background-image: none;
     background-color: $color-black;
@@ -22,9 +22,9 @@
     }
     @media only screen and (max-width: $bp-mob) {
       position: relative;
+      display: inline-block;
       left: 0;
       top: 0;
-      display: inline-block;
       margin: 3rem 1rem;
     }
 
@@ -40,11 +40,11 @@
     }
 
     &-sub {
-      font-size: 3.5rem;
-      font-family: $font-secondary;
       position: absolute;
       top: 100%;
       left: 80%;
+      font-size: 3.5rem;
+      font-family: $font-secondary;
       animation: opacity 3s;
       @media only screen and (max-width: $bp-larg) {
         left: 70%;
@@ -72,11 +72,24 @@
 }
 
 // === HEADER EVENT.HTML PAGE ===
-.header-event{
+.header-event {
   background-image: url(../img/bg/bg-3-desk.jpg);
   @media only screen and (max-width: $bp-tab) {
     background-image: url(../img/bg/bg-3-tab.jpg);
   }
+  @media only screen and (max-width: $bp-mob) {
+    background-image: none;
+    background-color: $color-black;
+  }
+}
+// === HEADER CONTACT.HTML PAGE ===
+.header-contact {
+  background-image: url(../img/bg/bg-4-desk.jpg);
+
+  @media only screen and (max-width: $bp-tab) {
+    background-image: url(../img/bg/bg-4-tab.jpg);
+  }
+
   @media only screen and (max-width: $bp-mob) {
     background-image: none;
     background-color: $color-black;

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Coté Musique est une association musicale situé sur Bordeaux qui organise des concerts, donne des cours d'initiation de batterie, de chant , de guitare. L'association dispose également d'un studio d'enregistrement pour votre première maquette."
+    />
+    <link href="css/main.css" rel="stylesheet" />
+
+    <title>Coté Musique Association</title>
+  </head>
+  <body class="container">
+    <header class="header header-contact">
+      <h1 class="header__heading">
+        <span class="header__heading-main">Coté musique</span>
+        <span class="header__heading-sub">association</span>
+      </h1>
+
+      <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+
+        <label for="navi-toggle" class="navigation__button">
+          <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="index.html" class="navigation__link">Acceuil</a>
+            </li>
+            <li class="navigation__item">
+              <a href="event.html" class="navigation__link">Evenements</a>
+            </li>
+            <li class="navigation__item">
+              <a href="contact.html" class="navigation__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="content-contact">
+      <h2 class="heading-2">Contact</h2>
+      <section class="section__form">
+          <form action="#test" method="post" class="form">
+            <fieldset class="form__name">
+              <label for="name" class="form__label">Nom</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="form__input"
+              />
+            </fieldset>
+  
+            <fieldset class="form__first">
+              <label for="first-name" class="form__label">Prenom</label>
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                required
+                class="form__input"
+              />
+            </fieldset>
+  
+            <fieldset class="form__email">
+              <label for="email" class="form__label">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Adresse mail"
+                required
+                class="form__input"
+              />
+            </fieldset>
+  
+            <fieldset class="form__message">
+              <label for="message" class="form__label">Message</label>
+              <textarea
+                name="text"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Entrez votre message ..."
+                class="form__message-box"
+                required
+              ></textarea>
+            </fieldset>
+  
+            <button type="button" class="form__btn btn">Envoyer</button>
+          </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__logo-box">
+        <img src="img/logo.png" alt="image logo" class="footer__logo-img" />
+      </div>
+
+      <div class="footer__navbottom">
+        <nav class="navbottom">
+          <ul class="navbottom__list">
+            <li class="navbottom__items">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="navbottom__link"
+                ><svg class="navbottom__link-icon">
+                  <use
+                    xlink:href="img/svg/sprite.svg#icon-facebook-with-circle"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="navbottom__items">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="navbottom__link"
+                ><svg class="navbottom__link-icon">
+                  <use
+                    xlink:href="img/svg/sprite.svg#icon-instagram-with-circle"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="navbottom__items">
+              <a
+                href="https://twitter.com/?lang=en"
+                target="_blank"
+                class="navbottom__link"
+                ><svg class="navbottom__link-icon">
+                  <use
+                    xlink:href="img/svg/sprite.svg#icon-twitter-with-circle"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="navbottom__items">
+              <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                class="navbottom__link"
+                ><svg class="navbottom__link-icon">
+                  <use
+                    xlink:href="img/svg/sprite.svg#icon-youtube-with-circle"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="navbottom__items">
+              <a
+                href="https://www.pinterest.fr/"
+                target="_blank"
+                class="navbottom__link"
+                ><svg class="navbottom__link-icon">
+                  <use
+                    xlink:href="img/svg/sprite.svg#icon-pinterest-with-circle"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__copyright">
+        <span>Built by @Cam </span>
+      </div>
+    </footer>
+  </body>
+</html>

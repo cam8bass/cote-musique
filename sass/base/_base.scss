@@ -12,14 +12,15 @@ html {
   @media only screen and (max-width: $bp-largest) {
     font-size: 56.25%; // 1rem= 9px
   }
-
+  
   @media only screen and (max-width: $bp-larg) {
     font-size: 50%; // 1rem= 8px
   }
-
+  
   @media only screen and (max-width: $bp-mob) {
     font-size: 43.75%; // 1rem= 7px
   }
+
 }
 
 body {

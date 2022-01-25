@@ -1,11 +1,11 @@
 // === START INDEX.HTML PAGE ===
 .section__about {
   grid-row: 1/2;
-  border-bottom: $border-down;
-  height: 50rem;
-  background-color: black;
   display: grid;
   grid-template-columns: minmax(min-content, 1fr) 1fr;
+  height: 50rem;
+  border-bottom: $border;
+  background-color: black;
 
   @media only screen and (max-width: $bp-tab) {
     display: grid;
@@ -22,7 +22,7 @@
   grid-row: 2/3;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  border-bottom: $border-down;
+  border-bottom: $border;
   background-image: linear-gradient(
       to bottom,
       rgba(black, 0.9),
@@ -58,7 +58,6 @@
     grid-row: 3/4;
   }
 }
-
 // === END INDEX.HTML PAGE
 
 //=== START EVENT.HTML PAGE
@@ -73,3 +72,10 @@
     justify-self: center;
   }
 }
+//=== END EVENT.HTML PAGE
+
+//=== START CONTACT.HTML PAGE
+.section__form {
+  grid-row: 2/3;
+}
+//=== END CONTACT.HTML PAGE
