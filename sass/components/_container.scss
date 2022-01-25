@@ -22,4 +22,6 @@
 // === CONTENT EVENT.HTML ===
 .content-event {
   grid-row: 2/3;
+  display: grid;
+  grid-template-rows: min-content min-content;
 }

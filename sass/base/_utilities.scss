@@ -15,3 +15,21 @@ strong {
     letter-spacing: 0;
   }
 }
+
+.heading-2 {
+  grid-row: 1/2;
+  font-size: 7.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: $font-primary;
+  text-align: center;
+  margin: 8rem;
+  background-image: linear-gradient(to right, $color-secondary, $color-tertiary-light);
+  -webkit-background-clip: text;
+  color: transparent;
+  @media only screen and (max-width: $bp-mob) {
+    font-size: 4.5rem;
+    letter-spacing: 0;
+  }
+}

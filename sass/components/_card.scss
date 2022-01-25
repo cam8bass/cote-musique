@@ -6,7 +6,6 @@
   @media only screen and (max-width: $bp-mob) {
     min-width: 80vw;
     height: auto;
-   
   }
 
   &:hover,
@@ -33,5 +32,12 @@
     font-size: 2rem;
     margin: 2rem;
     font-family: $font-text;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 5rem;
   }
 }
