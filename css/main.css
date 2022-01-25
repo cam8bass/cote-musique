@@ -126,6 +126,13 @@ strong {
   color: transparent;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .heading-2 {
+    font-size: 4.5rem;
+    letter-spacing: 0;
+  }
+}
+
 .header {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
@@ -622,6 +629,19 @@ strong {
   font-family: "Lato";
 }
 
+.card__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 5rem;
+}
+
 .navbottom__list {
   display: -ms-grid;
   display: grid;
@@ -895,5 +915,29 @@ strong {
     -ms-grid-row-span: 1;
     grid-row: 1/2;
   }
+}
+
+.btn {
+  padding: 1rem;
+  border: none;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-family: "Open Sans";
+  font-weight: 600;
+  background-color: #242887;
+  color: #fff;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-box-shadow: 2px 0px 15px 5px rgba(255, 255, 255, 0.11);
+  box-shadow: 2px 0px 15px 5px rgba(255, 255, 255, 0.11);
+}
+
+.btn:hover, .btn:active {
+  color: #202586;
+  background-color: #895bd5;
+}
+
+.btn:not(:last-child) {
+  margin-right: 1.2rem;
 }
 /*# sourceMappingURL=main.css.map */

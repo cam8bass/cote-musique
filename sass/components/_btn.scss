@@ -1,0 +1,21 @@
+.btn {
+  padding: 1rem;
+  border: none;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-family: $font-secondary;
+  font-weight: 600;
+  background-color: $color-secondary-light;
+  color: #fff;
+  transition: all 0.2s;
+  @include shadowhite;
+  &:hover,
+  &:active {
+    color: $color-secondary;
+    background-color: $color-tertiary-dark;
+  }
+
+  &:not(:last-child) {
+    margin-right: 1.2rem;
+  }
+}

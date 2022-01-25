@@ -28,4 +28,8 @@ strong {
   background-image: linear-gradient(to right, $color-secondary, $color-tertiary-light);
   -webkit-background-clip: text;
   color: transparent;
+  @media only screen and (max-width: $bp-mob) {
+    font-size: 4.5rem;
+    letter-spacing: 0;
+  }
 }
