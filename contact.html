@@ -9,8 +9,53 @@
       content="Coté Musique est une association musicale situé sur Bordeaux qui organise des concerts, donne des cours d'initiation de batterie, de chant , de guitare. L'association dispose également d'un studio d'enregistrement pour votre première maquette."
     />
     <link href="css/main.css" rel="stylesheet" />
-
     <title>Coté Musique Association</title>
+    <script type="application/ld+json">
+      [
+        {
+          "@context": "http://schema.org",
+          "@type": "Event",
+          "name": "Coté musique",
+          "url": "http://www.googleusercontent.com/index.html"
+        },
+        {
+          "@context": "http://schema.org",
+          "@type": "Event",
+          "url": "http://www.googleusercontent.com/event.html"
+        },
+        {
+          "@context": "http://schema.org",
+          "@type": "Event",
+          "image": "http://www.googleusercontent.com/img/logo.png",
+          "url": "http://www.googleusercontent.com/contact.html"
+        },
+        {
+          "@context": "http://schema.org",
+          "@type": "Event",
+          "url": "https://www.facebook.com/"
+        },
+        {
+          "@context": "http://schema.org",
+          "@type": "Event",
+          "url": "https://www.instagram.com/"
+        },
+        {
+          "@context": "http://schema.org",
+          "@type": "Event",
+          "url": "https://twitter.com/?lang=en"
+        },
+        {
+          "@context": "http://schema.org",
+          "@type": "Event",
+          "url": "https://www.youtube.com/"
+        },
+        {
+          "@context": "http://schema.org",
+          "@type": "Event",
+          "url": "https://www.pinterest.fr/"
+        }
+      ]
+    </script>
   </head>
   <body class="container">
     <header class="header header-contact">
@@ -47,56 +92,56 @@
     <main class="content-contact">
       <h2 class="heading-2">Contact</h2>
       <section class="section__form">
-          <form action="#test" method="post" class="form">
-            <fieldset class="form__name">
-              <label for="name" class="form__label">Nom</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                required
-                class="form__input"
-              />
-            </fieldset>
-  
-            <fieldset class="form__first">
-              <label for="first-name" class="form__label">Prenom</label>
-              <input
-                type="text"
-                id="first-name"
-                name="first-name"
-                required
-                class="form__input"
-              />
-            </fieldset>
-  
-            <fieldset class="form__email">
-              <label for="email" class="form__label">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Adresse mail"
-                required
-                class="form__input"
-              />
-            </fieldset>
-  
-            <fieldset class="form__message">
-              <label for="message" class="form__label">Message</label>
-              <textarea
-                name="text"
-                id="message"
-                cols="30"
-                rows="10"
-                placeholder="Entrez votre message ..."
-                class="form__message-box"
-                required
-              ></textarea>
-            </fieldset>
-  
-            <button type="button" class="form__btn btn">Envoyer</button>
-          </form>
+        <form action="#test" method="post" class="form">
+          <fieldset class="form__name">
+            <label for="name" class="form__label">Nom</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              class="form__input"
+            />
+          </fieldset>
+
+          <fieldset class="form__first">
+            <label for="first-name" class="form__label">Prenom</label>
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              required
+              class="form__input"
+            />
+          </fieldset>
+
+          <fieldset class="form__email">
+            <label for="email" class="form__label">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Adresse mail"
+              required
+              class="form__input"
+            />
+          </fieldset>
+
+          <fieldset class="form__message">
+            <label for="message" class="form__label">Message</label>
+            <textarea
+              name="text"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Entrez votre message ..."
+              class="form__message-box"
+              required
+            ></textarea>
+          </fieldset>
+
+          <button type="button" class="form__btn btn">Envoyer</button>
+        </form>
       </section>
     </main>
 
